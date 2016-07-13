@@ -23,6 +23,12 @@ public class Clock extends Thread{
 			}
 			String time= hour+":"+minutes+":"+seconds+" "+day_night;
 			clockView.changeTime(time);
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 }
