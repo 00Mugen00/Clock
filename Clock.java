@@ -22,7 +22,15 @@ public class Clock extends Thread{
 				day_night="AM";
 			}
 			String time= hour+":"+minutes+":"+seconds+" "+day_night;
+			
+			int day = calendar.get(Calendar.DAY_OF_MONTH);
+			int month = calendar.get(Calendar.MONTH);
+			int year = calendar.get(Calendar.YEAR);
+			String date= day+"-"+month+"-"+year;
+			
+			
 			clockView.changeTime(time);
+			clockView.chageDate(date);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {

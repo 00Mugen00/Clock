@@ -15,7 +15,7 @@ public class ClockDemo {
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.setContentPane((JPanel) clockView);		 
 		//window.pack();
-		window.setSize(new Dimension(250,80));
+		window.setSize(new Dimension(250,100));
 		window.setVisible(true);
 		window.setResizable(false);
 		
